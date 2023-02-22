@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css">
+    <style>
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid rgb(204, 37, 207);
+        }
+        </style>
+        <style>
+            div {
+                background-color: palevioletred;
+                width: 300px;
+                padding: 25px;
+                border: 25px ;
+                margin: 25px;
+            }
+            </style>
+</head>
+<body>
+    
+        <div id="Block1">
+            <header class="header"><h1>Insert data</h1></header>
+        <p>
+            <label for="Name">Name</label>
+            </p>
+            <input type="text" onfocus="FocusBox(this)" onblur="BlurBox(this)" >
+            <p>
+            <label for="Surname">Surname</label>
+            </p>
+            <input type="text" onfocus="FocusBox(this)" onblur="BlurBox(this)">
+            <p>
+                <label for="Gender">Gender</label>
+
+            </select>
+        </p>
+        <select name="" id="menu" onchange="SelectedMenu()">
+            <option value="Complicate">Complicate</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+            <p>Birth Date</p>
+            <p>
+                <label for="birthday"></label>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+            <p><button onclick="disPlayText()">Add</button></p>
+        
+            <script src="final.js"></script>
+        </div>
+</body>
+<body>
+        <table>
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>Surname</th>
+                <th>Gender</th>
+                <th>Birth date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>Complicate</td>
+                <td>2023-02-17</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>D</td>
+                <td>Male</td>
+                <td>2023-02-23</td>
+              </tr>
+            </tbody>
+          </table>
+</body>
+</html>
